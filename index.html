@@ -17,10 +17,10 @@
 @font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
 @font-face{font-family:Manrope;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
 @font-face{font-family:Manrope;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
-@font-face{font-family:"Jost fb";src:local("Century Gothic"),local("Arial");size-adjust:96%;ascent-override:100%;descent-override:30%}
+@font-face{font-family:"Jost fb";src:local("Arial");size-adjust:90%;ascent-override:100%;descent-override:30%}
 @font-face{font-family:"Manrope fb";src:local("Arial");size-adjust:104%;ascent-override:96%;descent-override:27%}
 /* kolory: grafit znaku CO (#1A1C22, próbka z logo), biel, chłodna szarość; akcent: ciepłe drewno elewacji z ich projektów (#B4532A) */
-:root{--ink:#1A1C22;--ink2:#262931;--txt:#22252C;--mut:#5B606B;--g:#F1F2F4;--line:#DDE0E5;--cu:#B4532A;--cu-l:#E07A4F;--hh:76px;--w:min(calc(100vw - 32px),1800px);--H:Jost,"Jost fb","Century Gothic",Arial,sans-serif;--sk:.5}
+:root{--ink:#1A1C22;--ink2:#262931;--txt:#22252C;--mut:#5B606B;--g:#F1F2F4;--line:#DDE0E5;--cu:#B4532A;--cu-l:#E07A4F;--hh:76px;--w:min(calc(100vw - 32px),1800px);--H:Jost,"Jost fb",Arial,sans-serif;--sk:.5}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
 body{margin:0;font-family:Manrope,"Manrope fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.2vw + 15px,19px);line-height:1.62;color:var(--txt);background:#fff;overflow-x:hidden}
@@ -58,8 +58,9 @@ p{margin:0}
 .hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
 .panel{position:relative;z-index:2;background:var(--ink)}
 .panel h1{color:#fff;font-weight:400;font-size:clamp(2.1rem,1rem + 2.9vw,4.6rem);line-height:1.04;text-wrap:balance}
+.panel h1 .d{display:none}
 .panel h1 span{display:block;font-weight:300;font-size:.56em;line-height:1.2;margin-top:.45em;color:#D9DBE0}
-.panel .lead{margin-top:20px;color:#C9CCD3;max-width:50ch;font-size:clamp(.98rem,.9rem + .25vw,1.15rem);line-height:1.55}
+.panel .lead{margin-top:20px;color:#C9CCD3;max-width:33em;font-size:clamp(.98rem,.9rem + .25vw,1.15rem);line-height:1.55}
 .cta{display:flex;align-items:center;flex-wrap:wrap;gap:14px 26px;margin-top:30px}
 .cta small{color:#AEB2BB;font-size:.9rem;line-height:1.35}
 .hero .podpis{position:absolute;z-index:2;right:clamp(16px,2.4vw,48px);bottom:clamp(16px,2vw,36px);font:400 .9rem/1.3 var(--H);color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55);letter-spacing:.02em}
@@ -70,6 +71,7 @@ p{margin:0}
   .hero{min-height:clamp(620px,calc(100svh - var(--hh)),1240px)}
   .panel{align-self:flex-start;width:min(54vw,1000px);padding:clamp(40px,3.6vw,72px) clamp(90px,8vw,170px) clamp(40px,3.6vw,72px) max(32px,calc((100vw - 1800px)/2));clip-path:polygon(0 0,calc(100% - 120px) 0,100% 100%,0 100%);margin-right:auto}
   .panel::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.08)}
+  .panel h1 .d{display:inline}
 }
 @media (min-width:1800px){.panel{width:min(48vw,1040px)}}
 @media (max-width:860px){
@@ -195,7 +197,7 @@ footer.st{background:#111317;color:#B7BBC4;padding:clamp(48px,5vw,84px) 0 0;font
 .st-g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
 .st-g h4{margin:0 0 12px;font:500 1.05rem/1.2 var(--H);color:#fff}
 .st-g a{text-decoration:none}.st-g a:hover{color:#fff}
-.st-g img{height:64px;width:auto}
+.st-g img{width:110px;max-width:100%;height:auto}
 .st-dol{margin-top:clamp(36px,4vw,60px);padding:20px 0 24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.875rem}
 .wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
 .wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
@@ -296,7 +298,7 @@ footer.st{background:#111317;color:#B7BBC4;padding:clamp(48px,5vw,84px) 0 0;font
   <p class="podpis">Dom w Pilchowie, projekt pracowni</p>
   <div class="panel">
     <span class="kreska" aria-hidden="true"></span>
-    <h1>Pracownia architektoniczna w Szczecinie<span>Budynki i wnętrza od koncepcji po realizację</span></h1>
+    <h1>Pracownia<br class="d"> architektoniczna w Szczecinie<span>Budynki i wnętrza od koncepcji po realizację</span></h1>
     <p class="lead">Projektujemy domy, budynki wielorodzinne, wnętrza oraz lokale usługowe i hotele. Prowadzimy projekt od analizy działki, przez projekt budowlany i wykonawczy, po nadzór autorski.</p>
     <div class="cta"><a class="btn w" href="#kontakt">Poproś o wycenę<i></i></a><small>Odpowiadamy zazwyczaj<br>w ciągu 24 godzin</small></div>
   </div>
