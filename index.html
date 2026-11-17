@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Pracownia architektoniczna Szczecin - CO Architekci | projekty domów i wnętrz</title>
+<meta name="description" content="CO Architekci - pracownia architektoniczna w Szczecinie (od 2014 r.). Projekty domów jednorodzinnych, budynków wielorodzinnych, wnętrz i lokali komercyjnych: od koncepcji, przez projekt budowlany i wykonawczy, po nadzór autorski.">
+<meta name="theme-color" content="#1A1C22">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-780.webp" imagesrcset="img/hero-m-540.webp 540w, img/hero-m-780.webp 780w" imagesizes="100vw" media="(max-width:860px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-d-1440.webp" imagesrcset="img/hero-d-960.webp 960w, img/hero-d-1440.webp 1440w, img/hero-d-1920.webp 1920w" imagesizes="100vw" media="(min-width:861px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/manrope-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Manrope;font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:Manrope;font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Jost fb";src:local("Century Gothic"),local("Arial");size-adjust:96%;ascent-override:100%;descent-override:30%}
+@font-face{font-family:"Manrope fb";src:local("Arial");size-adjust:104%;ascent-override:96%;descent-override:27%}
+/* kolory: grafit znaku CO (#1A1C22, próbka z logo), biel, chłodna szarość; akcent: ciepłe drewno elewacji z ich projektów (#B4532A) */
+:root{--ink:#1A1C22;--ink2:#262931;--txt:#22252C;--mut:#5B606B;--g:#F1F2F4;--line:#DDE0E5;--cu:#B4532A;--cu-l:#E07A4F;--hh:76px;--w:min(calc(100vw - 32px),1800px);--H:Jost,"Jost fb","Century Gothic",Arial,sans-serif;--sk:.5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Manrope,"Manrope fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.2vw + 15px,19px);line-height:1.62;color:var(--txt);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--H);font-weight:400;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+/* przycisk: prostokąt ścięty ukośną kreską z łącznika C-O w znaku */
+.btn{display:inline-flex;align-items:center;gap:16px;min-height:56px;padding:0 34px 0 26px;background:var(--ink);color:#fff;font:500 1.1rem/1 var(--H);letter-spacing:.01em;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(0 0,100% 0,calc(100% - 16px) 100%,0 100%);transition:background .2s}
+.btn:hover{background:#000}
+.btn i{display:block;width:22px;height:2px;background:currentColor;position:relative;transition:width .25s}
+.btn i::after{content:"";position:absolute;right:-1px;top:-4px;width:2px;height:10px;background:currentColor;transform:skewX(-27deg)}
+.btn:hover i{width:30px}
+.btn:focus-visible{outline:3px solid var(--cu);outline-offset:3px;clip-path:none}
+.btn.w{background:#fff;color:var(--ink)}.btn.w:hover{background:var(--g)}
+/* nagłówek */
+.top{position:sticky;top:0;z-index:50;background:#fff;transition:box-shadow .2s}
+.top.sc{box-shadow:0 1px 0 var(--line),0 8px 24px rgba(26,28,34,.06)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:var(--hh)}
+.logo{display:block;flex:none}
+.logo img{height:52px;width:auto}
+.menu{display:flex;align-items:center;gap:clamp(18px,2vw,40px);margin-left:auto;font:400 1.08rem/1 var(--H)}
+.menu a{text-decoration:none;color:var(--ink);padding:10px 0;position:relative}
+.menu a::after{content:"";position:absolute;left:0;bottom:2px;height:2px;width:0;background:var(--cu);transition:width .25s}
+.menu a:hover::after,.menu a.on::after{width:100%}
+.top .btn{min-height:48px;font-size:1rem;padding:0 28px 0 20px}
+.menu .mbtn,.menu .mkt{display:none}
+.burger{display:none;width:48px;height:48px;border:0;background:none;padding:12px;cursor:pointer;margin-left:auto}
+.burger span{display:block;height:2px;background:var(--ink);margin:6px 0;transition:transform .2s,opacity .2s}
+/* hero: dom w Pilchowie, grafitowy panel ucięty ukośną kreską znaku */
+.hero{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:calc(100svh - var(--hh));background:var(--ink);color:#fff;overflow:hidden}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.panel{position:relative;z-index:2;background:var(--ink)}
+.panel h1{color:#fff;font-weight:400;font-size:clamp(2.1rem,1rem + 2.9vw,4.6rem);line-height:1.04;text-wrap:balance}
+.panel h1 span{display:block;font-weight:300;font-size:.56em;line-height:1.2;margin-top:.45em;color:#D9DBE0}
+.panel .lead{margin-top:20px;color:#C9CCD3;max-width:50ch;font-size:clamp(.98rem,.9rem + .25vw,1.15rem);line-height:1.55}
+.cta{display:flex;align-items:center;flex-wrap:wrap;gap:14px 26px;margin-top:30px}
+.cta small{color:#AEB2BB;font-size:.9rem;line-height:1.35}
+.hero .podpis{position:absolute;z-index:2;right:clamp(16px,2.4vw,48px);bottom:clamp(16px,2vw,36px);font:400 .9rem/1.3 var(--H);color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.55);letter-spacing:.02em}
+.kreska{display:block;width:84px;height:2px;background:var(--cu-l);margin-bottom:26px;position:relative}
+.kreska::after{content:"";position:absolute;right:-6px;top:-7px;width:2px;height:16px;background:var(--cu-l);transform:skewX(-27deg)}
+@media (min-width:861px){
+  :root{--w:min(calc(100vw - 64px),1800px)}
+  .hero{min-height:clamp(620px,calc(100svh - var(--hh)),1240px)}
+  .panel{align-self:flex-start;width:min(54vw,1000px);padding:clamp(40px,3.6vw,72px) clamp(90px,8vw,170px) clamp(40px,3.6vw,72px) max(32px,calc((100vw - 1800px)/2));clip-path:polygon(0 0,calc(100% - 120px) 0,100% 100%,0 100%);margin-right:auto}
+  .panel::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.08)}
+}
+@media (min-width:1800px){.panel{width:min(48vw,1040px)}}
+@media (max-width:860px){
+  :root{--hh:64px}
+  .hero{justify-content:flex-start}
+  .hero .ph{position:relative;inset:auto;flex:1 1 auto;min-height:160px}
+  .hero .ph img{position:absolute;inset:0;object-position:50% 60%}
+  .panel{flex:none;margin-top:-34px;padding:clamp(38px,6svh,48px) 16px clamp(20px,3.4svh,30px);clip-path:polygon(0 34px,100% 0,100% 100%,0 100%)}
+  .panel h1{font-size:clamp(1.85rem,8.2vw,2.6rem)}
+  .panel h1 span{font-size:.6em}
+  .panel .lead{margin-top:12px;font-size:clamp(.94rem,3.9vw,1.02rem);line-height:1.5}
+  .cta{margin-top:24px;gap:10px 18px}
+  .cta .btn{min-height:52px}
+  .cta small{display:none}
+  .kreska{margin-bottom:16px;width:64px}
+  .hero .podpis{top:12px;bottom:auto;right:12px;font-size:.78rem}
+}
+/* sekcje */
+section{padding:clamp(64px,6.5vw,132px) 0}
+.g{background:var(--g)}
+.h2{font-size:clamp(2rem,1.1rem + 2.3vw,3.7rem);max-width:20ch}
+.intro{margin-top:18px;color:var(--mut);max-width:64ch;font-size:1.04em}
+.shead{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(30px,3vw,56px)}
+/* zakres: 4 kafle ze zdjęciami ich projektów, dolna krawędź podpisu ścięta ukośnie */
+.zak{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.4vw,26px)}
+.zak a{display:block;text-decoration:none;color:inherit}
+.zak .f{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--g)}
+.zak .f img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.zak a:hover .f img{transform:scale(1.04)}
+.zak .f::after{content:"";position:absolute;right:0;bottom:0;width:38%;height:42px;background:#fff;clip-path:polygon(21px 0,100% 0,100% 100%,0 100%)}
+.zak h3{margin-top:18px;font-size:clamp(1.3rem,1rem + .6vw,1.65rem);line-height:1.18}
+.zak p{margin-top:8px;color:var(--mut);font-size:.96em}
+.zak-dop{margin-top:clamp(28px,2.6vw,44px);padding-top:22px;border-top:1px solid var(--line);color:var(--mut);display:flex;flex-wrap:wrap;gap:8px 28px}
+.zak-dop strong{color:var(--ink);font-weight:600}
+/* realizacje: tor przewijany palcem i myszą */
+.tor{display:flex;gap:clamp(14px,1.4vw,24px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;user-select:none;padding-bottom:4px}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor figure{margin:0;flex:none;width:clamp(280px,31vw,600px);scroll-snap-align:start}
+@media (min-width:1500px){.tor figure{width:calc((var(--w) - 3*clamp(14px,1.4vw,24px))/4)}}
+.tor button{all:unset;display:block;width:100%;cursor:zoom-in;position:relative;overflow:hidden;aspect-ratio:3/2;background:#dfe2e6}
+.tor button:focus-visible{outline:3px solid var(--cu);outline-offset:-3px}
+.tor img{width:100%;height:100%;object-fit:cover;pointer-events:none;transition:transform .6s}
+.tor button:hover img{transform:scale(1.03)}
+.tor figcaption{margin-top:14px;font:400 1.14rem/1.3 var(--H);color:var(--ink);display:flex;gap:12px;align-items:baseline}
+.tor figcaption small{font:500 .8rem/1 Manrope,"Manrope fb",Arial,sans-serif;color:var(--mut);white-space:nowrap}
+.nav{display:flex;gap:10px;flex:none}
+.nav button{width:54px;height:54px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;display:grid;place-items:center;color:var(--ink);transition:background .2s,color .2s}
+.nav button:hover{background:var(--ink);color:#fff}
+.nav svg{width:20px;height:20px}
+.rl-dol{margin-top:clamp(26px,2.4vw,40px);color:var(--mut)}
+/* pracownia: mocna ciemna sekcja w grafit znaku */
+.pr{background:var(--ink);color:#D3D6DC}
+.pr .h2{color:#fff}
+.pr-siatka{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(36px,5vw,120px);align-items:start}
+.pr-txt p+p{margin-top:16px}
+.pr-txt>p:first-of-type{margin-top:26px}
+.cyt{margin:clamp(30px,3vw,48px) 0 0;padding:0 0 0 28px;position:relative;font:300 clamp(1.3rem,1rem + .8vw,1.85rem)/1.38 var(--H);color:#fff}
+.cyt::before{content:"";position:absolute;left:0;top:.2em;bottom:.2em;width:2px;background:var(--cu-l);transform:skewX(-8deg)}
+.cyt footer{margin-top:14px;font:500 .92rem/1.4 Manrope,"Manrope fb",Arial,sans-serif;color:#AEB2BB}
+.zesp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin-top:clamp(30px,3vw,48px)}
+.zesp div{padding:20px 0;border-top:1px solid rgba(255,255,255,.16)}
+.zesp h3{color:#fff;font-size:1.3rem;line-height:1.25}
+.zesp p{margin-top:6px;font-size:.92em;color:#AEB2BB}
+.pr-foto{position:relative;overflow:hidden}
+.pr-foto img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.pr-foto figcaption{margin-top:12px;font-size:.88rem;color:#9BA0AA}
+.narz{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.narz li{display:flex;gap:16px;align-items:baseline}
+.narz li::before{content:"";flex:none;width:14px;height:2px;background:var(--cu-l);transform:translateY(-4px) skewY(-30deg)}
+/* proces: jedna ciągła linia jak w znaku CO */
+.proc{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,5vw,120px);align-items:start}
+.linia{list-style:none;margin:0;padding:0;position:relative}
+.linia::before{content:"";position:absolute;left:9px;top:14px;bottom:14px;width:2px;background:var(--ink)}
+.linia li{position:relative;padding:0 0 clamp(22px,2vw,32px) 52px}
+.linia li:last-child{padding-bottom:0}
+.linia li::before{content:"";position:absolute;left:0;top:6px;width:20px;height:20px;border:2px solid var(--ink);border-radius:50%;background:#fff}
+.linia li:first-child::before{border-right-color:transparent;transform:rotate(45deg)}
+.linia li:last-child::before{border-width:5px}
+.linia h3{font-size:clamp(1.3rem,1.05rem + .5vw,1.6rem);line-height:1.2}
+.linia p{margin-top:6px;color:var(--mut);font-size:.97em}
+.czas{margin-top:clamp(30px,3vw,46px);border-top:1px solid var(--line)}
+.czas div{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.czas strong{font:500 1.15rem/1.3 var(--H);color:var(--ink);white-space:nowrap}
+.koszt{margin-top:clamp(26px,2.6vw,40px);background:var(--g);padding:clamp(22px,2.4vw,36px);position:relative}
+.koszt::before{content:"";position:absolute;left:0;top:0;width:64px;height:3px;background:var(--cu)}
+.koszt h3{font-size:1.35rem}
+.koszt p{margin-top:8px;color:var(--mut)}
+.koszt b{color:var(--ink);font-weight:700}
+/* FAQ */
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(36px,5vw,120px);align-items:start}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font:400 clamp(1.12rem,1rem + .35vw,1.35rem)/1.3 var(--H);color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(45deg) translateY(-4px);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+.faq details p{padding:0 0 22px;color:var(--mut);max-width:66ch}
+/* kontakt */
+.kt{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(36px,5vw,120px);align-items:start}
+.kt-dane{margin-top:30px;display:grid;gap:20px}
+.kt-dane a,.kt-dane div{text-decoration:none}
+.kt-dane small{display:block;color:var(--mut);font-size:.82rem;margin-bottom:2px}
+.kt-dane strong{font:400 1.4rem/1.3 var(--H);color:var(--ink)}
+.kt-dane a:hover strong{color:var(--cu)}
+form{background:var(--g);padding:clamp(24px,3vw,52px)}
+form h3{font-size:1.65rem}
+form .sub{margin-top:8px;color:var(--mut);font-size:.95em}
+.pola{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.pole{display:flex;flex-direction:column;gap:6px}
+.pole.cale{grid-column:1/-1}
+label{font-size:.88rem;font-weight:600;color:var(--ink)}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1.5px solid #C5C9D0;border-radius:0;padding:13px 14px;min-height:52px;width:100%}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(180,83,42,.25)}
+[aria-invalid="true"]{border-color:#B3261E}
+.zgoda{display:flex;gap:12px;align-items:flex-start;margin-top:18px;font-size:.88rem;color:var(--mut);font-weight:400}
+.zgoda input{width:22px;height:22px;min-height:0;flex:none;margin-top:1px;accent-color:var(--ink)}
+form .btn{margin-top:22px}
+.msg{margin-top:16px;padding:14px 16px;background:#fff;border-left:3px solid var(--cu);font-size:.95rem}
+/* stopka */
+footer.st{background:#111317;color:#B7BBC4;padding:clamp(48px,5vw,84px) 0 0;font-size:.95rem}
+.st-g{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+.st-g h4{margin:0 0 12px;font:500 1.05rem/1.2 var(--H);color:#fff}
+.st-g a{text-decoration:none}.st-g a:hover{color:#fff}
+.st-g img{height:64px;width:auto}
+.st-dol{margin-top:clamp(36px,4vw,60px);padding:20px 0 24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.875rem}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* pasek na telefonie */
+.mob{display:none}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,11,14,.94);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb figure{margin:0;max-width:94vw;max-height:88vh;display:flex;flex-direction:column;align-items:center}
+.lb img{max-width:94vw;max-height:80vh;width:auto;height:auto;object-fit:contain}
+.lb figcaption{color:#E4E6EA;margin-top:12px;font:400 1.05rem/1.3 var(--H);text-align:center}
+.lb button{position:absolute;width:52px;height:52px;border:0;background:rgba(255,255,255,.1);color:#fff;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb button svg{width:24px;height:24px}
+.lb .x{top:14px;right:14px}.lb .p{left:14px;top:50%;margin-top:-26px}.lb .n{right:14px;top:50%;margin-top:-26px}
+@media (max-width:1180px){
+  .menu{gap:18px;font-size:1rem}
+  .top .btn{display:none}
+}
+@media (max-width:1100px){
+  .zak{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pr-siatka,.proc,.faq,.kt{grid-template-columns:minmax(0,1fr)}
+  .pr-foto img{aspect-ratio:16/10}
+  .st-g{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .burger{display:block}
+  .logo img{height:42px}
+  .menu{position:fixed;left:0;right:0;top:var(--hh);bottom:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 16px 24px;font-size:1.4rem;transform:translateX(100%);visibility:hidden;transition:transform .25s,visibility .25s;overflow-y:auto}
+  .menu a{padding:18px 0;border-bottom:1px solid var(--line)}
+  .menu a::after{bottom:-1px}
+  .menu .mbtn{display:inline-flex;align-self:flex-start;margin-top:28px;padding:0 34px 0 26px;border:0;color:#fff;font-size:1.1rem}
+  .menu .mbtn::after{display:none}
+  .menu .mkt{display:block;margin:22px 0 0;font:400 1rem/1.6 Manrope,"Manrope fb",Arial,sans-serif;color:var(--mut)}
+  .top.open .menu{transform:none;visibility:visible}
+  .top.open .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .top.open .burger span:nth-child(2){opacity:0}
+  .top.open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .shead{flex-direction:column;align-items:flex-start}
+  .shead .nav{display:none}
+  .tor{margin-right:-16px;padding-right:16px}
+  .tor figure{width:82vw}
+  .zesp{grid-template-columns:minmax(0,1fr)}
+  .pola{grid-template-columns:minmax(0,1fr)}
+  .czas div{flex-direction:column;gap:2px}
+  .czas strong{white-space:normal}
+  footer.st{padding-bottom:72px}
+  .mob{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;box-shadow:0 -1px 0 var(--line),0 -6px 18px rgba(0,0,0,.08);transform:translateY(110%);transition:transform .25s}
+  .mob.widac{transform:none}
+  .mob a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:58px;font:500 1.05rem/1 var(--H);text-decoration:none;color:var(--ink)}
+  .mob a.r{background:var(--ink);color:#fff}
+}
+@media (max-width:520px){
+  .zak{gap:22px 12px}
+  .zak h3{font-size:1.12rem}
+  .zak p{font-size:.86rem}
+  .st-g{gap:24px 16px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="CO Architekci - strona główna"><img src="img/logo.webp" width="258" height="150" alt="CO&amp;Architekci"></a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#zakres">Zakres</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#pracownia">Pracownia</a>
+      <a href="#proces">Jak pracujemy</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn mbtn" href="#kontakt">Poproś o wycenę<i></i></a>
+      <p class="mkt">biuro@architekci.co<br>ul. Piastów 22/3, Szczecin</p>
+    </nav>
+    <a class="btn" href="#kontakt">Poproś o wycenę<i></i></a>
+    <button class="burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="tresc">
+<section class="hero" id="start" aria-label="CO Architekci" style="padding:0">
+  <div class="ph">
+    <picture>
+      <source media="(max-width:860px)" srcset="img/hero-m-540.webp 540w, img/hero-m-780.webp 780w" sizes="100vw">
+      <img src="img/hero-d-1440.webp" srcset="img/hero-d-960.webp 960w, img/hero-d-1440.webp 1440w, img/hero-d-1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="Dom jednorodzinny w Pilchowie - projekt CO Architekci: ciemna drewniana elewacja wśród sosen" fetchpriority="high">
+    </picture>
+  </div>
+  <p class="podpis">Dom w Pilchowie, projekt pracowni</p>
+  <div class="panel">
+    <span class="kreska" aria-hidden="true"></span>
+    <h1>Pracownia architektoniczna w Szczecinie<span>Budynki i wnętrza od koncepcji po realizację</span></h1>
+    <p class="lead">Projektujemy domy, budynki wielorodzinne, wnętrza oraz lokale usługowe i hotele. Prowadzimy projekt od analizy działki, przez projekt budowlany i wykonawczy, po nadzór autorski.</p>
+    <div class="cta"><a class="btn w" href="#kontakt">Poproś o wycenę<i></i></a><small>Odpowiadamy zazwyczaj<br>w ciągu 24 godzin</small></div>
+  </div>
+</section>
+
+<section id="zakres">
+  <div class="wrap">
+    <div class="shead"><div><h2 class="h2">Co projektujemy</h2><p class="intro">Od pojedynczego pomieszczenia po zespół budynków mieszkalnych. Każdy projekt zaczynamy od wytycznych inwestora, warunków działki i kontekstu miejsca.</p></div></div>
+    <div class="zak">
+      <a href="#realizacje"><div class="f"><img src="img/p-siadlo.webp" width="720" height="480" loading="lazy" alt="Dom jednorodzinny w Siadle Dolnym - wizualizacja"></div><h3>Domy jednorodzinne</h3><p>Projekty indywidualne: koncepcja, pozwolenie na budowę, projekt wykonawczy.</p></a>
+      <a href="#realizacje"><div class="f"><img src="img/p-hanza.webp" width="720" height="480" loading="lazy" alt="Apartament Hanza Tower w Szczecinie - salon"></div><h3>Wnętrza</h3><p>Układ funkcjonalny, wizualizacje, rysunki, dobór materiałów i wyposażenia.</p></a>
+      <a href="#realizacje"><div class="f"><img src="img/p-cukiernia.webp" width="720" height="480" loading="lazy" alt="Cukiernia w Szczecinie - projekt wnętrza"></div><h3>Gastronomia i usługi</h3><p>Restauracje, kawiarnie, piekarnie, biura i kancelarie.</p></a>
+      <a href="#realizacje"><div class="f"><img src="img/p-mielno.webp" width="720" height="480" loading="lazy" alt="Hotel i restauracja w Mielnie - wizualizacja wnętrza"></div><h3>Hotele i obiekty komercyjne</h3><p>Obiekty hotelowe, apartamentowe, handlowe i użyteczności publicznej.</p></a>
+    </div>
+    <p class="zak-dop"><span><strong>Budynki wielorodzinne</strong> i zespoły zabudowy mieszkalnej</span><span><strong>Rozbudowy i przebudowy</strong></span><span><strong>Analiza działki</strong> przed zakupem</span></p>
+  </div>
+</section>
+
+<section class="g" id="realizacje">
+  <div class="wrap">
+    <div class="shead">
+      <div><h2 class="h2">Wybrane realizacje</h2><p class="intro">Domy, mieszkania i lokale, które zaprojektowaliśmy w Szczecinie, na Pomorzu i w całej Polsce. Przesuń, aby zobaczyć kolejne, kliknij, aby powiększyć.</p></div>
+      <div class="nav" data-nav="tor-r"><button type="button" data-k="-1" aria-label="Poprzednie realizacje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button type="button" data-k="1" aria-label="Następne realizacje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div>
+    </div>
+    <div class="tor" id="tor-r" data-tor>
+      <figure><button type="button" data-lb="r" data-src="img/p-pilchowo-xl.webp" data-cap="Dom w Pilchowie"><img src="img/p-pilchowo.webp" width="720" height="480" loading="lazy" alt="Dom w Pilchowie - projekt CO Architekci"></button><figcaption>Dom w Pilchowie<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-siadlo-xl.webp" data-cap="Dom jednorodzinny w Siadle Dolnym"><img src="img/p-siadlo.webp" width="720" height="480" loading="lazy" alt="Dom jednorodzinny w Siadle Dolnym - projekt CO Architekci"></button><figcaption>Dom jednorodzinny w Siadle Dolnym<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-magdalenka-xl.webp" data-cap="Dom jednorodzinny w Magdalence"><img src="img/p-magdalenka.webp" width="720" height="480" loading="lazy" alt="Dom jednorodzinny w Magdalence - projekt CO Architekci"></button><figcaption>Dom jednorodzinny w Magdalence<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-hanza-xl.webp" data-cap="Apartament Hanza Tower w Szczecinie"><img src="img/p-hanza.webp" width="720" height="480" loading="lazy" alt="Apartament Hanza Tower w Szczecinie - projekt CO Architekci"></button><figcaption>Apartament Hanza Tower w Szczecinie<small>wnętrze</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-doluje-xl.webp" data-cap="Bliźniak w Dołujach"><img src="img/p-doluje.webp" width="720" height="480" loading="lazy" alt="Bliźniak w Dołujach - projekt CO Architekci"></button><figcaption>Bliźniak w Dołujach<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-cukiernia-xl.webp" data-cap="Cukiernia w Szczecinie"><img src="img/p-cukiernia.webp" width="720" height="480" loading="lazy" alt="Cukiernia w Szczecinie - projekt CO Architekci"></button><figcaption>Cukiernia w Szczecinie<small>lokal</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-siniechowo-xl.webp" data-cap="Dom jednorodzinny w Siniechowie"><img src="img/p-siniechowo.webp" width="720" height="480" loading="lazy" alt="Dom jednorodzinny w Siniechowie - projekt CO Architekci"></button><figcaption>Dom jednorodzinny w Siniechowie<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-warszewo-xl.webp" data-cap="Dom na Warszewie"><img src="img/p-warszewo.webp" width="720" height="480" loading="lazy" alt="Dom na Warszewie - projekt CO Architekci"></button><figcaption>Dom na Warszewie<small>wnętrze</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-mielno-xl.webp" data-cap="Hotel i restauracja w Mielnie"><img src="img/p-mielno.webp" width="720" height="480" loading="lazy" alt="Hotel i restauracja w Mielnie - projekt CO Architekci"></button><figcaption>Hotel i restauracja w Mielnie<small>hotel</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-skarszyn-xl.webp" data-cap="Dom w Skarszynie"><img src="img/p-skarszyn.webp" width="720" height="480" loading="lazy" alt="Dom w Skarszynie - projekt CO Architekci"></button><figcaption>Dom w Skarszynie<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-kocia-xl.webp" data-cap="Kocia Kawiarnia w Szczecinie"><img src="img/p-kocia.webp" width="720" height="480" loading="lazy" alt="Kocia Kawiarnia w Szczecinie - projekt CO Architekci"></button><figcaption>Kocia Kawiarnia w Szczecinie<small>lokal</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-lublin-xl.webp" data-cap="Dom w Lublinie"><img src="img/p-lublin.webp" width="720" height="480" loading="lazy" alt="Dom w Lublinie - projekt CO Architekci"></button><figcaption>Dom w Lublinie<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-gruzja-xl.webp" data-cap="Mieszkanie w Gruzji"><img src="img/p-gruzja.webp" width="720" height="480" loading="lazy" alt="Mieszkanie w Gruzji - projekt CO Architekci"></button><figcaption>Mieszkanie w Gruzji<small>wnętrze</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-pysznica-xl.webp" data-cap="Dom w Pysznicy"><img src="img/p-pysznica.webp" width="720" height="480" loading="lazy" alt="Dom w Pysznicy - projekt CO Architekci"></button><figcaption>Dom w Pysznicy<small>dom</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-biuro-xl.webp" data-cap="Biuro w Szczecinie"><img src="img/p-biuro.webp" width="720" height="480" loading="lazy" alt="Biuro w Szczecinie - projekt CO Architekci"></button><figcaption>Biuro w Szczecinie<small>wnętrze</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-lipkowo-xl.webp" data-cap="Dom w Lipkowie"><img src="img/p-lipkowo.webp" width="720" height="480" loading="lazy" alt="Dom w Lipkowie - projekt CO Architekci"></button><figcaption>Dom w Lipkowie<small>wnętrze</small></figcaption></figure>
+      <figure><button type="button" data-lb="r" data-src="img/p-sala-xl.webp" data-cap="Sala eventowa w Trójmieście"><img src="img/p-sala.webp" width="720" height="480" loading="lazy" alt="Sala eventowa w Trójmieście - projekt CO Architekci"></button><figcaption>Sala eventowa w Trójmieście<small>lokal</small></figcaption></figure>
+    </div>
+    <p class="rl-dol">W portfolio pracowni jest ponad 35 projektów: domy, mieszkania, restauracje, biura, hotel i konkurs na osiedle TBS w Stargardzie.</p>
+  </div>
+</section>
+
+<section class="pr" id="pracownia">
+  <div class="wrap pr-siatka">
+    <div class="pr-txt">
+      <h2 class="h2">Pracownia CO Architekci</h2>
+      <p>Biuro powstało w 2014 roku w Szczecinie. Projektujemy architekturę i architekturę wnętrz: obiekty mieszkalne jednorodzinne i wielorodzinne, hotelowe, komercyjne i użyteczności publicznej.</p>
+      <p>Niezależnie od skali angażujemy się w każdy etap, od koncepcji po realizację, i stawiamy na otwartą komunikację z inwestorem. Projekt może przebiegać w całości online, bez ani jednego spotkania stacjonarnego.</p>
+      <blockquote class="cyt">Dobrze zaprojektowana architektura nie potrzebuje nadmiaru dekoracji - jej siła tkwi w przemyślanej strukturze, świetle, materiale i relacji z otoczeniem.<footer>Piotr Lipski, właściciel pracowni</footer></blockquote>
+      <div class="zesp">
+        <div><h3>Piotr Lipski</h3><p>mgr inż. arch., właściciel pracowni</p></div>
+        <div><h3>Katarzyna Sawicz-Jabłońska</h3><p>mgr inż. arch., architekt, upr. nr 13/ZPOIA/OKK/2022</p></div>
+      </div>
+    </div>
+    <div>
+      <figure class="pr-foto" style="margin:0"><img src="img/p-dziwnowek-xl.webp" width="1600" height="1067" loading="lazy" alt="Dom jednorodzinny w Dziwnówku - wizualizacja tarasu z basenem"><figcaption>Dom jednorodzinny w Dziwnówku</figcaption></figure>
+      <h3 style="color:#fff;font-size:1.4rem;margin-top:clamp(28px,3vw,44px)">Projekt widać, zanim powstanie</h3>
+      <ul class="narz">
+        <li>interaktywne modele projektowanych obiektów</li>
+        <li>fotorealistyczne wizualizacje i animacje komputerowe</li>
+        <li>makiety drukowane na drukarce 3D</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="proces">
+  <div class="wrap proc">
+    <div>
+      <h2 class="h2">Jak pracujemy</h2>
+      <p class="intro">Najlepiej zgłosić się jak najwcześniej, nawet przed zakupem działki. Pomagamy ją ocenić i sprawdzić, co można na niej zbudować według planu miejscowego lub warunków zabudowy.</p>
+      <div class="czas">
+        <div><span>Projekt wnętrz</span><strong>od 4 do 12 tygodni</strong></div>
+        <div><span>Indywidualny dom jednorodzinny</span><strong>od 3 do 6 miesięcy</strong></div>
+        <div><span>Zespół budynków wielorodzinnych</span><strong>od 6 do 12 miesięcy</strong></div>
+      </div>
+      <p style="margin-top:10px;color:var(--mut);font-size:.88rem">Czasy bez procedur urzędowych.</p>
+      <div class="koszt"><h3>Ile kosztuje projekt?</h3><p>Zależy od zakresu, metrażu i stopnia skomplikowania, rozliczenie jest etapowe. Przykładowo projekt domu o powierzchni ok. 200 m² to około <b>45 000 zł</b> za koncepcję, projekt do pozwolenia na budowę i dokumentację branżową.</p></div>
+    </div>
+    <ol class="linia">
+      <li><h3>Analiza i brief</h3><p>Wytyczne inwestora, budżet, termin, mapa do celów projektowych, plan miejscowy lub warunki zabudowy, analiza chłonności działki.</p></li>
+      <li><h3>Koncepcja</h3><p>Układ funkcjonalno-przestrzenny i bryła, pokazane na wizualizacjach i modelu.</p></li>
+      <li><h3>Projekt budowlany</h3><p>Dokumentacja do pozwolenia na budowę lub zgłoszenia, uzgodnienia i decyzje.</p></li>
+      <li><h3>Projekt wykonawczy</h3><p>Rysunki i zestawienia dla wykonawców, dobór materiałów.</p></li>
+      <li><h3>Wsparcie w realizacji</h3><p>Nadzór autorski, rekomendacja sprawdzonych wykonawców, kontrola zgodności z projektem i budżetem.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="g" id="faq">
+  <div class="wrap faq">
+    <div><h2 class="h2">Najczęstsze pytania</h2><p class="intro">Nie ma tu odpowiedzi na Państwa pytanie? Proszę napisać, odpowiadamy zazwyczaj w ciągu 24 godzin.</p></div>
+    <div>
+      <details><summary>Co obejmuje projekt?</summary><p>Koncepcję funkcjonalno-przestrzenną, projekt budowlany (do pozwolenia lub zgłoszenia), projekt wykonawczy dla wykonawców, wizualizacje 3D oraz nadzór autorski.</p></details>
+      <details><summary>Czy muszę mieć działkę albo budynek?</summary><p>Nie. Pomagamy przeanalizować i wybrać działkę lub ocenić nieruchomość przed zakupem.</p></details>
+      <details><summary>Czy projektowanie może odbywać się online?</summary><p>Tak. Proces projektowania może przebiegać w całości zdalnie, bez ani jednego spotkania stacjonarnego.</p></details>
+      <details><summary>Czy w projekcie można wprowadzać poprawki?</summary><p>Tak, oferta zawiera określoną liczbę poprawek i korekt. Zmiany są możliwe na każdym etapie, zakres i koszt ustalamy indywidualnie.</p></details>
+      <details><summary>Czy mogę zlecić projekt jednego pomieszczenia?</summary><p>Tak, realizujemy także pojedyncze wnętrza.</p></details>
+      <details><summary>Jakie dokumenty są potrzebne?</summary><p>Mapa do celów projektowych, badanie gruntu, wypis i wyrys z planu miejscowego lub decyzja o warunkach zabudowy, wytyczne co do programu i charakteru architektury oraz inspiracje.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap kt">
+    <div>
+      <h2 class="h2">Porozmawiajmy o Państwa projekcie</h2>
+      <p class="intro">Wystarczy kilka informacji o inwestycji. Przygotujemy wycenę i zaproponujemy zakres prac.</p>
+      <div class="kt-dane">
+        <a href="mailto:biuro@architekci.co"><small>E-mail</small><strong>biuro@architekci.co</strong></a>
+        <a href="tel:+48571937902"><small>Telefon</small><strong>+48 571 937 902</strong></a>
+        <div><small>Pracownia</small><strong>ul. Piastów 22/3 (III piętro)<br>71-064 Szczecin</strong></div>
+      </div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Poproś o wycenę</h3>
+      <p class="sub">Formularz pokazowy - w podglądzie nic nie jest wysyłane.</p>
+      <div class="pola">
+        <div class="pole"><label for="f-im">Imię i nazwisko</label><input id="f-im" name="imie" autocomplete="name" required></div>
+        <div class="pole"><label for="f-em">E-mail</label><input id="f-em" name="email" type="email" autocomplete="email" required></div>
+        <div class="pole"><label for="f-tel">Telefon (opcjonalnie)</label><input id="f-tel" name="tel" type="tel" autocomplete="tel"></div>
+        <div class="pole"><label for="f-rodz">Rodzaj projektu</label><select id="f-rodz" name="rodzaj"><option>Dom jednorodzinny</option><option>Budynek wielorodzinny</option><option>Wnętrze / aranżacja</option><option>Rozbudowa / przebudowa</option><option>Inne</option></select></div>
+        <div class="pole"><label for="f-pow">Powierzchnia (m²)</label><input id="f-pow" name="pow" inputmode="numeric"></div>
+        <div class="pole"><label for="f-lok">Lokalizacja inwestycji</label><input id="f-lok" name="lok"></div>
+        <div class="pole cale"><label for="f-zak">Zakres usługi</label><select id="f-zak" name="zakres"><option>Koncepcja</option><option>Projekt budowlany do pozwolenia na budowę</option><option>Projekt na zgłoszenie (do 70 m²)</option><option>Projekt wykonawczy</option><option>Kompleksowo: projekt budowlany i wnętrza</option></select></div>
+        <div class="pole cale"><label for="f-msg">Dodatkowe informacje</label><textarea id="f-msg" name="wiadomosc"></textarea></div>
+      </div>
+      <label class="zgoda"><input type="checkbox" required> Zapoznałem(-am) się z regulaminem i polityką prywatności.</label>
+      <button class="btn" type="submit">Wyślij zapytanie<i></i></button>
+      <p class="msg" id="msg" hidden>Dziękujemy. To podgląd strony - na docelowej wiadomość trafi na biuro@architekci.co.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="st">
+  <div class="wrap">
+    <div class="st-g">
+      <div><img src="img/logo-biale.webp" width="258" height="150" alt="CO&amp;Architekci" decoding="async"><p style="margin-top:16px">Pracownia architektoniczna w Szczecinie. Architektura i wnętrza od 2014 roku.</p></div>
+      <div><h4>Pracownia</h4><p>ul. Piastów 22/3 (III piętro)<br>71-064 Szczecin<br>NIP 851 300 51 07</p></div>
+      <div><h4>Kontakt</h4><p><a href="mailto:biuro@architekci.co">biuro@architekci.co</a><br><a href="tel:+48571937902">+48 571 937 902</a></p></div>
+      <div><h4>Na skróty</h4><p><a href="#realizacje">Realizacje</a><br><a href="#proces">Jak pracujemy</a><br><a href="#faq">FAQ</a><br><a href="#start">Polityka prywatności</a></p></div>
+    </div>
+    <div class="st-dol"><span>© <span id="rok">2026</span> CO Architekci, Szczecin</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=architekci.co&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+
+<nav class="mob" id="mob" aria-label="Szybki kontakt">
+  <a href="mailto:biuro@architekci.co">Napisz e-mail</a>
+  <a class="r" href="#kontakt">Poproś o wycenę</a>
+</nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <button class="p" type="button" aria-label="Poprzednie"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="n" type="button" aria-label="Następne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
